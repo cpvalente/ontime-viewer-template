@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  display: block;
+  background-color: yellow;
+  color: red;
+  padding: 8px;
+}
+
+#timestamp {
+  color: red;
+}
+
+.description {
+  display: block;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  border: 1px solid pink;
+  margin: 8px;
+  padding: 8px;
+  background-color: white;
+}
+
+.title,
+.description {
+  display: inline-block;
+  width: 10em;
+  color: gray;
+}
+
+code {
+  background-color: #ccc;
+  padding: 0 4px;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 12px;
+}

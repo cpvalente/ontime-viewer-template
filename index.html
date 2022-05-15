@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ontime demo</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>ONTIME VIEWER TEMPLATE</h1>
+    <div class="container">
+      <div class="card">
+        <span class="title">Running timer</span>
+        <code id="running">-</code>
+        <p>
+          <span class="title">Last message received</span>
+          <span id="timestamp">-</span>
+        </p>
+        <p>
+          <span class="title">Help? See docs</span>
+          <a
+            href="https://cpvalente.gitbook.io/ontime/control-and-feedback/websocket-api"
+            target="_blank"
+            >https://cpvalente.gitbook.io/ontime/control-and-feedback/websocket-api</a
+          >
+        </p>
+      </div>
+      <details class="card" open>
+        <summary>
+          Timer
+          <div>
+            <span class="title">Message endpoint</span><code>timer</code>
+            <em>Updates every second</em>
+          </div>
+          <div>
+            <span class="description">Description</span>Object with all timer
+            values
+          </div>
+        </summary>
+        <code id="timer">-</code>
+      </details>
+      <details class="card" open>
+        <summary>
+          Titles
+          <div>
+            <span class="title">Message endpoint</span><code>titles</code>
+            <em>Updates on new event</em>
+          </div>
+          <div>
+            <span class="description">Description</span>Ontime titles for
+            current and next event
+          </div>
+        </summary>
+        <code id="titles">-</code>
+      </details>
+      <details class="card" open>
+        <summary>
+          Public Titles
+          <div>
+            <span class="title">Message endpoint</span
+            ><code>publictitles</code> <em>Updates on new event</em>
+          </div>
+          <div>
+            <span class="description">Description</span>Ontime titles for
+            current and next event, filtered for public events
+          </div>
+        </summary>
+        <code id="publictitles">-</code>
+      </details>
+      <details class="card" open>
+        <summary>
+          Messages timer
+          <div>
+            <span class="title">Message endpoint</span
+            ><code>messages-timer</code> <em>Updates on change</em>
+          </div>
+          <div>
+            <span class="description">Description</span>Private messages to
+            stage timer screens
+          </div>
+        </summary>
+        <code id="messages-timer">-</code>
+      </details>
+      <details class="card" open>
+        <summary>
+          Messages public
+          <div>
+            <span class="title">Message endpoint</span
+            ><code>messages-public</code> <em>Updates on change</em>
+          </div>
+          <div>
+            <span class="description">Description</span>Private messages to
+            public screens
+          </div>
+        </summary>
+        <code id="messages-public">-</code>
+      </details>
+      <details class="card" open>
+        <summary>
+          Messages timer
+          <div>
+            <span class="title">Message endpoint</span
+            ><code>messages-lower</code> <em>Updates on change</em>
+          </div>
+          <div>
+            <span class="description">Description</span>Private messages to
+            lower thirds
+          </div>
+        </summary>
+        <code id="messages-lower">-</code>
+      </details>
+      <details class="card" open>
+        <summary>
+          On Air
+          <div>
+            <span class="title">Message endpoint</span><code>onAir</code>
+            <em>Updates on change and new event</em>
+          </div>
+          <div>
+            <span class="description">Description</span>Whether On Air toggle is
+            on
+          </div>
+        </summary>
+        <code id="onAir">-</code>
+      </details>
+    </div>
+  </body>
+  <!--
+    Note:
+    We include socket io locally, you could have this as an npm install
+    https://socket.io/docs/v4/client-api/
+   -->
+  <script src="./socket-io/socket.io.min.js"></script>
+  <script src="./app.js" type="module"></script>
+</html>
