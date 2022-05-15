@@ -1,7 +1,7 @@
 # Ontime viewer template
  A template for creating custom viewers using ontime data
 
-![Viewer Template](https://github.com/cpvalente/ontime-viewer-template/blob/master/.github/viewer-template.jpg)
+![Viewer Template](https://github.com/cpvalente/ontime-viewer-template/blob/main/.github/viewer-template.jpg)
 
 
 Ontime broadcasts its data over websockets.
